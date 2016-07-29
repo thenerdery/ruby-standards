@@ -83,11 +83,16 @@ code.highlighter-rouge, .highlighter-rouge pre.highlight {
 .content-container {
   margin: auto;
   max-width: 650px;
+
+  h1 {
+    border-bottom: 5px solid #ff5f5f;
+  }
 }
 #markdown-toc {
   a {
     background-color: white;
     text-decoration: none;
+    font-weight: 800;
   }
   a:hover {
     color: #f30707;
