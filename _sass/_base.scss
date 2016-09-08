@@ -43,17 +43,6 @@ h3 {
 header {
   text-align: center;
   margin-top: 20px;
-
-  h1 {
-    background-image: url("/assets/images/header-ruby-logo@2x.png");
-    background-size: 62px 62px;
-    padding: 15px 0 15px 75px;
-    background-repeat: no-repeat;
-    display: inline-block;
-    font-size: 2em;
-    font-weight: 900;
-    color: #86150e;
-  }
 }
 
 hr {
@@ -88,6 +77,28 @@ code.highlighter-rouge, .highlighter-rouge pre.highlight {
     border-bottom: 5px solid #ff5f5f;
   }
 }
+
+.page-container {
+  header {
+    margin-bottom: 64px;
+    text-align: center;
+
+    h1 {
+      background-image: url("/assets/images/header-ruby-logo@2x.png");
+      background-size: 62px 62px;
+      padding: 15px 0 15px 75px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      font-size: 2em;
+      font-weight: 900;
+      margin-bottom: 5px;
+    }
+    h2 {
+      margin-top: 5px;
+    }
+  }
+}
+
 #markdown-toc {
   a {
     background-color: white;
