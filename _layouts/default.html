@@ -15,22 +15,31 @@
 </head>
 
 <body>
-<header>
-    <!--<div class="menu">
-        {% for my_page in site.pages %}
-        {% if my_page.title %}
-        <a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
-        {% endif %}
-        {% endfor %}
-    </div>-->
-    <!--<h1>
-        Nerdery Ruby Standards
-    </h1>-->
-</header>
 
-<div class="content-container">
+<div class="page">
+  <div class="page-header">
+    <div class="banner">
+      <header class="masthead">
+        <div class="masthead-logo">
+          <img src="/assets/images/header-ruby-logo@2x.png" alt="" />
+        </div>
+
+        <h1 class="masthead-title">
+          Nerdery Ruby Standards
+        </h1>
+
+        <div class="masthead-tag">
+          Version 1
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <div class="page-content">
     {{ content }}
+  </div>
 </div>
+
 </body>
 
 </html>

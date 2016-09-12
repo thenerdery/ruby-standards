@@ -1,7 +1,5 @@
 ---
 layout: page
-title: Nerdery Ruby Standards
-subtitle: Version 1
 author: The Nerdery Ruby Standards Task Force
 ---
 
