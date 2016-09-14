@@ -1,0 +1,261 @@
+/*doc
+---
+title: Global Header
+name: globalHeader
+category: Landmark
+---
+
+The Global Header object contains the site's branding, search, main navigation and secondary navigation.
+
+At smaller screens, the main navigation and secondary nav menu are hidden from view. Clicking the menu toggle button will expand the main and secondary nav.
+
+The Global Header also contains a hidden search form that is revealed by clicking on the search icon.
+
+Active state styles for the search menu are located in _globalSearch.scss.
+
+Class                                 | Description
+------------------------------------- | ---------------------------------------------------------------
+`.globalHeader`                       | Base class. 
+`.globalHeader-primary`               | Child of base class. Container for primary content like main navigation and logo
+`.globalHeader-primary-nav`           | Child of base class. Container for main navigation.
+`.globalHeader-primary-search`        | Child of `globalHeader-primary`. Container for search toggle and search form. 
+`.globalHeader-primary-search-icon`   | Child of `globalHeader-primary-search`. Search toggle open button.
+`.globalHeader-primary-search-close`  | Child of `globalHeader-primary-search`. Search toggle close button.
+`.globalHeader-secondary`             | Child of base class. Container for secondary navigation or other supplemental content.
+`.globalHeader-secondary-nav`         | Child of base class. Container for main navigation.
+`.globalHeader-mobiTrigger`           | Child of base class. Container for mobile menu toggle button.
+`.globalHeader-mobiTrigger-menu`      | Child of `.globalHeader-mobiTrigger`. Mobile menu toggle button.
+
+
+## State Classes
+Class                          | Description
+------------------------------ | ---------------------------------------------------------------
+`.searchIsOpen`                | State class to indcate whether the search form is visible.
+`.mobiMenuIsOpen`              | State class to indcate whether the mobile menu is visible.
+`.scrollIsLocked`              | State class to prevent body content from scrolling when menu or search is open.
+
+
+*/
+
+.globalHeader {
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.globalHeader:after,
+.globalHeader:before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.globalHeader:before {
+    background: linear-gradient(to bottom, #2caf98 30%,#17838c 100%); // TODO: add include for gradient
+    z-index: -1;
+}
+
+.globalHeader:after {
+    background-image: url('../media/images/svgs/bg-mobile-sneezeguard.svg');
+    background-size: 100%;
+    z-index: -1;
+}
+
+// hides the navigation when the the mobile menu is closed
+.globalHeader:not(.mobiMenuIsOpen) .globalHeader-primary-nav,
+.globalHeader:not(.mobiMenuIsOpen) .globalHeader-secondary {
+    height: 0;
+    width: 0;
+    border: none;
+}
+
+.globalHeader:not(.mobiMenuIsOpen):after,
+.globalHeader:not(.mobiMenuIsOpen):before {
+    content: none;
+}
+
+.globalHeader-primary-nav {
+    background-color: rgba(255,255,255,0.77);
+    border-top: 1px solid $C-BRAND;
+    text-align: center;
+}
+
+.globalHeader-primary-nav > * > * + * {
+    border-top: 1px solid $C-BRAND;
+}
+
+.globalHeader-primary-nav > * > * > a {
+    font-family: $FONT_FAMILY_GEO;
+    font-size: 22px;
+    color: $C_OFFBLACK;
+    text-decoration: none;
+    display: block;
+    padding: $SPACING_STD * 2;
+}
+
+.globalHeader-primary-search {
+    position: absolute;
+    top: 5px;
+    right: 87px;
+}
+
+// active state is defined in _globalSearch.scss
+.globalHeader-primary-search-icon {
+    height: 25px;
+    width: 25px;
+    padding: 18px;
+    border: none;
+    background-color: transparent;
+    background: none;
+    box-sizing: content-box;
+    -webkit-appearance: none;
+}
+
+button.globalHeader-primary-search-icon,
+button.globalHeader-primary-search-close {
+    border: none;
+    background-color: transparent;
+    box-sizing: initial;
+    background: none;
+    overflow: visible;
+}
+
+.globalHeader-primary-search-icon > svg {
+    fill: $C_WHITE;
+    height: 25px;
+    width: 25px;
+}
+
+:not(.searchIsOpen) .globalSearch,
+:not(.searchIsOpen) .globalSearch-input {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    border: none;
+}
+
+.scrollIsLocked { // place on the body tag when Search or mobile menu are open
+    position: fixed;
+    overflow: hidden;
+}
+
+.globalHeader.searchIsOpen,
+.globalHeader.mobiMenuIsOpen {
+    overflow: visible;
+}
+
+.globalSearch-submit {
+    position: absolute;
+    height: 0;
+    width: 0;
+    overflow: hidden;
+    right: -9999px;
+}
+
+input[placeholder].globalSearch-input {
+    color: $C_GREY_TINT_2;
+    text-transform: uppercase;
+    font-family: $FONT_FAMILY_SOURCE;
+    font-weight: $FONT_WEIGHT_BOLD;
+}
+
+input.globalSearch-input:focus {
+    color: $C_GREY_TINT_2;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.globalHeader-primary-search-close {
+    -webkit-appearance: none;
+    border: none;
+    background-color: transparent;
+    box-sizing: initial;
+    padding: 0;
+}
+
+.globalHeader-mobiTrigger {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5px;
+  right: 5px;
+  padding: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.globalHeader-mobiTrigger-menu {
+  display: block;
+  height: 8px;
+  border-bottom: 2px solid $C_WHITE;
+  opacity: 1;
+  transition: border 0.2s ease-in-out;
+}
+
+.globalHeader-mobiTrigger-menu:before,
+.globalHeader-mobiTrigger-menu:after {
+  position: relative;
+  content: "";
+  display: block;
+  height: 2px;
+  background-color: $C_WHITE;
+  transition: all 0.5s ease;
+}
+
+.globalHeader-mobiTrigger-menu:after {
+  top: 14px;
+}
+
+/* START .mobiMenuIsOpen styles */
+.mobiMenuIsOpen {
+    z-index: 3;
+}
+
+.mobiMenuIsOpen .globalHeader-mobiTrigger-menu {
+  border: 0 solid transparent;
+}
+
+.mobiMenuIsOpen .globalHeader-mobiTrigger-menu:before {
+    transform: rotate(-135deg);
+    transform-origin: center center;
+    top: 9px;
+}
+
+.mobiMenuIsOpen .globalHeader-mobiTrigger-menu:after {
+    transform: rotate(135deg);
+    transform-origin: center center;
+    top: 7px;
+}
+
+/* END .mobiMenuIsOpen styles */
+
+.globalHeader-secondary {
+    background-color: rgba(255,255,255,0.77);
+    border-top: 1px solid $C-BRAND;
+    border-bottom: 1px solid $C-BRAND;
+    font-size: 0; /* Setting up Inline-block layout */
+}
+
+.globalHeader-secondary-nav > * > * {
+    text-align: center;
+    display: inline-block;
+    width: 33.333367%;
+    box-sizing: border-box;
+}
+
+.globalHeader-secondary-nav > * > * + * {
+    border-left: 1px solid $C_BRAND;
+}
+
+.globalHeader-secondary-nav > * > * a {
+    display: block;
+    font-size: 16px;
+    text-decoration: none;
+    color: $C_OFFBLACK;
+    padding: $SPACING_STD;
+}

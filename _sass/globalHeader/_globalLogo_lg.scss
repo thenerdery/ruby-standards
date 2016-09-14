@@ -1,0 +1,45 @@
+// Global Logo - large screen styles
+.globalLogo {
+    background: none;
+    transform: scale(1.1); // Scaling proportionally to preserve repective spacing relationships
+}
+
+.globalLogo-container {
+    display: block;
+    position: absolute;
+    top: 6px;
+    max-width: 100%;
+    min-width: 340px;
+    height: inherit;
+    background: transparent;
+    margin-left: -28px; /* negative margin to line up pocket arrow to content left */
+}
+
+.globalLogo-container > * {
+    fill: $C_BRAND;
+}
+
+.globalLogo-container > * > * {
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+.globalLogo-container-mark {
+    width: 39px;
+}
+
+.globalLogo-container-type {
+    margin-top: 3px;
+    margin-left: $SPACING_STD * 1.3;
+    width: 165px;
+}
+
+// adding specific max-height on svg to fix layout issues in IE.
+.globalLogo-container-mark .globalLogo-container-svg {
+    max-height: 36px;
+}
+
+.globalLogo-container-type .globalLogo-container-svg {
+    max-height: 20px;
+}

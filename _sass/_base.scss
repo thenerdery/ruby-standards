@@ -13,6 +13,7 @@
 
 body {
   font-family:
+    "Source_Sans_Pro",
     -apple-system,
     BlinkMacSystemFont,
     "Segoe UI",
@@ -35,16 +36,27 @@ img {
 //================================================================
 
 .banner {
-  padding: 20px;
-  border-top: 5px solid #00b08a;
-  background-color: #293c3d;
+  padding: 0;
+  border-top: 10px solid #{$C_OFFBLACK_2};
+  background-color: #{$C_GREY_TINT_8};
+}
+
+.globalLogo-container {
+    margin-left: 0;
 }
 
 //================================================================
 // Page
 //================================================================
 
-.page-content { @include centeredWrapper(); }
+.page-content {
+    @include centeredWrapper();
+    padding: 0 20px;
+}
+
+@media screen and #{$BP_MAJOR_LG_ARGUMENTS} {
+    .page-content { padding: 0; }
+}
 
 //================================================================
 // Masthead
@@ -63,15 +75,8 @@ img {
 
 .masthead > * + * { margin-left: 10px; }
 
-.masthead-logo { width: 40px; }
-
-.masthead-title {
-  font-size: 30px;
-  color: #00b08a;
-}
-
 .masthead-tag {
-  padding: 4px 6px;
+  padding: 8px 6px;
   position: absolute;
   right: 0;
   top: 50%;
@@ -80,4 +85,57 @@ img {
   background-color: #00b08a;
   font-size: 12px;
   color: #ffffff;
+}
+
+//================================================================
+// Layer
+//================================================================
+
+.layer {
+}
+
+.layer_hasWatermark {
+    background: #{$C_BRAND} url("../assets/images/bg-chevron-watermark.svg") 0 0 repeat;
+}
+
+.layer-container {
+    max-width: 1300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+//================================================================
+// Hero
+//================================================================
+
+.hero {
+    padding: 3rem 0;
+}
+
+.hero-logo {
+  width: 56px; 
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.hero-title {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+}
+
+//================================================================
+// Footer
+//================================================================
+
+.footer {
+    margin-top: 4rem;
+    background-color: #{$C_OFFBLACK_1};
+    padding: 1rem 0;
+    color: #{$C_GREY_TINT_1};
+}
+
+.footerLegal {
+    text-align: center;
+    font-size: 0.8rem;
 }

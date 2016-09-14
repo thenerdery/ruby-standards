@@ -1,0 +1,180 @@
+// Global Header - large screen styles
+.globalHeader {
+    padding: $SPACING_STD * 6 0 $SPACING_STD * 2; /* Spacing for globalHeader-secondary's absolute positioning */
+    background: $C_WHITE; //Pattern in Mobile
+    overflow: visible;
+}
+
+.globalHeader:after,
+.globalHeader:before {
+    content: none;
+}
+
+// hides the navigation when the the mobile menu is closed
+.globalHeader:not(.mobiMenuIsOpen) .globalHeader-primary-nav,
+.globalHeader:not(.mobiMenuIsOpen) .globalHeader-secondary {
+    height: auto;
+    width: 100%;
+}
+
+.globalHeader:not(.mobiMenuIsOpen):after,
+.globalHeader:after {
+    content: " ";
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: inherit;
+    left: 0;
+    right: 0;
+    bottom: -1px;
+    z-index: -1;
+    background: $C_GREY_TINT_6;
+}
+
+.globalHeader-primary {
+    position: relative;
+    max-width: $SITE_MAX_WIDTH;
+    margin: 0 auto;
+    display: table;
+    width: calc(100% - 40px);
+    padding: 0 $SPACING_STD * 2;
+}
+
+.globalHeader-primary > * {
+    display: table-cell;
+}
+
+/* Primary Navigation */
+.globalHeader-primary-nav {
+    background-color: none;
+    border-top: none;
+    text-align: right;
+    overflow: hidden;
+}
+
+.globalHeader-primary-nav > * > * {
+    border-top: none;
+    display: inline-block;
+}
+
+.globalHeader-primary-nav > * > * > a {
+    padding: $SPACING_STD * 2.5 $SPACING_STD * 2 $SPACING_STD * 2.1;
+}
+
+.globalHeader-primary-nav > * > * > a {
+    position: relative;
+}
+
+.globalHeader-primary-nav > * > * > a:hover,
+.globalHeader-primary-nav > * > * > a:focus,
+.globalHeader-primary-nav > * > * > a:active {
+    outline-offset: -1px;
+}
+
+.globalHeader-primary-nav > * > * > a:after,
+.globalHeader-primary-nav > * > * > a:before {
+    content: '';
+    z-index: -1;
+    position:  absolute;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    opacity: 0;
+    transition: height 0.5s ease-in-out, opacity 0.25s ease-out;
+}
+
+.globalHeader-primary-nav > * > * > a:after {
+    bottom: calc(50% - 1px);
+    background-color: $C_GREY_TINT_8;
+}
+
+.globalHeader-primary-nav > * > * > a:before {
+    top: calc(50% - 1px);
+    background-color: $C_GREY_TINT_8;
+}
+
+.globalHeader-primary-nav > * > * > a:hover:after,
+.globalHeader-primary-nav > * > * > a:hover:before {
+    height: 100%;
+    opacity: 1;
+}
+
+.globalHeader-primary-search {
+    position: static;
+    vertical-align: middle;
+    text-align: right;
+}
+
+.globalHeader-primary-search-icon {
+    padding: $SPACING_STD * 0.5;
+    display: inline-block;
+    vertical-align: bottom;
+    cursor: pointer;
+}
+
+.globalHeader-primary-search-icon > svg {
+    fill: $C_OFFBLACK;
+}
+
+.globalHeader-mobiTrigger {
+    display: none;
+}
+
+.globalHeader-secondary {
+    border: none;
+    background-color: $C_OFFBLACK_1;
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+/* BEGIN Secondary Navigation */
+.globalHeader-secondary-nav > * {
+    max-width: $SITE_MAX_WIDTH;
+    width: calc(100% - 40px);
+    padding: 0 $SPACING_STD * 2;
+    margin: 0 auto;
+    text-align: right;
+}
+
+.globalHeader-secondary-nav > * > * {
+    width: auto;
+    transform: skewX(-15deg);
+    transition: background-color 0.2s ease-in-out;
+}
+
+.globalHeader-secondary-nav > * > *:hover {
+    background-color: $C_OFFBLACK;
+}
+
+.globalHeader-secondary-nav > * > * + * {
+    border-left: none;
+}
+
+.globalHeader-secondary-nav > * > * a {
+    display: block;
+    font-size: 15px;
+    text-decoration: none;
+    color: $C_WHITE;
+    padding: $SPACING_STD * 1.25 $SPACING_STD * 3;
+    transform: skewX(15deg); /* To offset the transform of the parent */
+}
+
+
+/* State Classes */
+
+// place on the body tag when Search or mobile menu are open
+.scrollIsLocked {
+    position: static;
+    overflow: visible;
+}
+
+/* Mixins */
+
+.mix-accent_brand {
+    background-color: $C_BRAND_SHADE;
+}
+
+.mix-accent_grey {
+    background-color: $C_GREY_TINT_7;
+}

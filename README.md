@@ -38,3 +38,15 @@ bundle exec jekyll serve
 ```
 
 After that, the site will be running @ http://localhost:4000 and sports live-reloading as you make changes.
+
+## Installation Troubleshooting
+
+If you run into an error on Mac OS X after running `bundle install` regarding
+an error for nokogiri. The following steps may allow you to get the
+dependencies installed properly, as per [this stackoverflow post](https://github.com/sparklemotion/nokogiri/issues/1483).
+
+```sh
+brew uninstall --force xz
+gem install nokogiri -v 1.6.8
+bundle config build.nokogiri --use-system-libraries
+```

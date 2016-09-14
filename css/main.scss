@@ -4,7 +4,21 @@
 @charset "utf-8";
 
 @import
+  "vars",
+  "globalHeader/_globalHeader",
+  "globalHeader/_globalLogo",
   "reset",
   "base",
+  "fonts",
   "markdown",
   "highlight";
+
+/* ---------------------------------------------------------------------
+ Desktop Specific Styles
+------------------------------------------------------------------------ */
+@media screen and #{$BP_MAJOR_LG_ARGUMENTS} {
+  @import
+    "globalHeader/_globalHeader_lg",
+    "globalHeader/_globalLogo_lg";
+}
+

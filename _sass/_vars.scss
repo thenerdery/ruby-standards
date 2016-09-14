@@ -1,0 +1,104 @@
+// ----------------------------------------------------------------------------
+// Site Globals
+// ----------------------------------------------------------------------------
+$SITE_MID_WIDTH: 980px; // reduced from 1100 as per marketing request
+$SITE_MAX_WIDTH: 1300px; // layer container uses this with border-box so the inner padding allows everything to be 1280px
+$SPACING_STD: 10px;
+
+// ----------------------------------------------------------------------------
+// Colors
+// ----------------------------------------------------------------------------
+
+$C_WHITE: #ffffff;
+$C_BLACK: #000000;
+$C_OFFBLACK: #2d4245;
+$C_OFFBLACK_1: #1c2d2d;
+$C_OFFBLACK_2: #3A4546;
+$C_ERROR: #ff0000;
+
+// CRUSHER TEAL
+$C_BRAND: #007b89;
+$C_BRAND_SHADE: #116268;
+$C_BRAND_TINT_1: #52a8af;
+$C_BRAND_TINT_2: #83c7cc;
+$C_BRAND_TINT_3: #addee1;
+
+// MINT CREAM
+$C_MINT_CREAM: #99BEB6;
+
+// WARBIRD GREEN
+$C_BRAND2: #00b08a;
+$C_BRAND2_SHADE: #2a876f;
+$C_BRAND2_TINT_1: #67bfa6;
+$C_BRAND2_TINT_2: #98d2c3;
+$C_BRAND2_TINT_3: #c7e5dd;
+
+// TROY PLUM
+$C_BRAND3: #664659;
+$C_BRAND3_SHADE: #422439;
+$C_BRAND3_TINT_1: #89677d;
+$C_BRAND3_TINT_2: #a38b9a;
+$C_BRAND3_TINT_3: #c6b5c0;
+
+// BLUE
+$C_BRAND4: #052e59;
+
+// DATA GOLD
+$C_BRAND_CTA: #e2de00;
+$C_BRAND_CTA_SHADE: #ccc72c;
+
+// EARL GREY
+$C_GREY: #4e5859;
+$C_GREY_SHADE: #293c3d;
+$C_GREY_TINT_1: #6f7a79;
+$C_GREY_TINT_2: #889091;
+$C_GREY_TINT_3: #a6b1b2;
+$C_GREY_TINT_4: #b8c0c1;
+$C_GREY_TINT_5: #cad0d1;
+$C_GREY_TINT_6: #dcdfe0;
+$C_GREY_TINT_7: #ebeded;
+$C_GREY_TINT_8: #ebeced;
+
+// ----------------------------------------------------------------------------
+// Font Families
+// ----------------------------------------------------------------------------
+
+$FONT_FAMILY_SOURCE: "Source_Sans_Pro", Arial, Helvetica, sans-serif;
+$FONT_FAMILY_GEO: "Geogrotesque", 'Verdana', 'Lucida Grande', 'Lucida Sans Unicode', 'Lucida Sans', Tahoma, sans-serif;
+// ----------------------------------------------------------------------------
+// Font Sizes
+// ----------------------------------------------------------------------------
+
+$FONT_SIZE_DEFAULT: 16px;
+
+// ----------------------------------------------------------------------------
+// Font Weights
+// ----------------------------------------------------------------------------
+
+$FONT_WEIGHT_NORMAL: 400;
+$FONT_WEIGHT_MEDIUM: 600;
+$FONT_WEIGHT_BOLD: 700;
+
+// ----------------------------------------------------------------------------
+// Font Styles
+// ----------------------------------------------------------------------------
+
+$FONT_STYLE_NORMAL: normal;
+$FONT_STYLE_ITALIC: italic;
+
+// ----------------------------------------------------------------------------
+// Breakpoint Sizes
+// ----------------------------------------------------------------------------
+// Breakpoint variables, use "min-width"
+$BP_MAJOR_LG_MEDIA: "screen";
+$BP_MAJOR_LG_ARGUMENTS: "(min-width: 960px)";
+$BP_MAJOR_LG_WIDTH: 960;
+$BP_MAJOR_MD_MEDIA: "screen";
+$BP_MAJOR_MD_ARGUMENTS: "(min-width: 768px)";
+$BP_MAJOR_MD_WIDTH: 768;
+$BP_MAJOR_SM_MEDIA: "screen";
+$BP_MAJOR_SM_ARGUMENTS: "(min-width: 320px)";
+$BP_MAJOR_SM_WIDTH: 320;
+$BP_MAJOR_BASE_MEDIA: "screen";
+$BP_MAJOR_BASE_ARGUMENTS: "(min-width: 1em)";
+$BP_MAJOR_BASE_WIDTH: 1;
