@@ -101,7 +101,9 @@ If you find yourself repeatedly doing something, please don't hesitate to open a
 
 ## Background Jobs
 
-[Delayed::Job](https://github.com/collectiveidea/delayed_job) is our usual choice for a backing engine to support ActiveJob.  It provides solid community support and a strong sharing of knowledge amongst our developers.
+Background Job runners are a fairly cut-and-dry bunch without too many differentiators.  Our developer have the most experience with [Delayed::Job](https://github.com/collectiveidea/delayed_job), so that is what we'll usually expect to find on a given project.
+
+If you find one that you *really* like and feel is way superior, please open an issue or a PR so that we can have a discussion about it.
 
 ## File Uploads and Storage
 
