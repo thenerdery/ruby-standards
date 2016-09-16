@@ -59,6 +59,12 @@ This separation gives us clear choices as to the locations of most items and hel
 
 ## Stepping Outside of MVC
 
+MVC is not a silver bullet for every single problem.  It *is* a damned good way to solve common web application architectures but it is often necessary to step outside of these boundaries.  It is a subject of much debate and has no generally agreed upon solution within the Rails community.  Since there is no clear winner, we have simply selected a pattern for you to follow:
+
+> All non-mvc code goes into `lib/` - **eg: lib/services, lib/polices, lib/whatever**
+
+The predominant way that you will step out of the MVC pattern is through the usage and implementation of **service classes**.  These classes are typically developed to split out particular *concerns* of a given domain object.  You may find this at odds with Rails Concerns and rightfully so.  Rails Concerns are a hotly debated topic in the Rails community, and as a whole we simply eskew towards using the more agnostic Service Class approach.
+
 # Rails Clean Code Basics
 
 # Source Control Practices
