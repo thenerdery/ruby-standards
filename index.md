@@ -72,7 +72,7 @@ There are 2 primary means for hosting source control on Nerdery Rails projects:
 
 GitHub is our usual go-to for source control hosting as it provides the highest level of 3rd party service integration.  This level of service allows for easy integration with 3rd party tools like CircleCI, CodeClimate and Heroku.
 
-Our internally self-hosted Nerdery BitBucket service provides a bare-bones code hosting solution that is useful when a client does not wish to pay any additional fees.  It lacks 3rd party support for tools, so you will need to budget in additional time (40-80hours) for integration with our internal CI server Bamboo.
+Our internally self-hosted Nerdery BitBucket service provides a bare-bones code hosting solution that is useful when a client does not wish to pay any additional fees.  It lacks 3rd party support for our typical tools (such as CircleCI, Code Climate and Gemnasium), so you will need to budget in additional time (40-80hours) for integration with our internal CI server Bamboo.
 
 ## Branching Strategies
 
