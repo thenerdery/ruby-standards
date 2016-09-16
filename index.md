@@ -105,10 +105,19 @@ This separation gives us clear choices as to the locations of most items and hel
 
 # 3rd Party Services
 
-## Continuous Integration
+Our standard package of 3rd party services includes the following:
 
-## File Storage
+1. AWS for Application Hosting
+1. GitHub for Code Hosting
+1. CircleCI for Continuous Integration / Deployment
 
-## Hosting
+Since GitHub and CircleCI are discussed above, the rest of this section will deal specifically with AWS.
 
-## Source Control Hosting (SCM)
+There are many hosting providers that provide a variety of costs, but AWS provides the simplest and cleanest growth path of any provider.  It easily and cost-effectively allows us to scale from a small single-server application to a load balanced multi-tiered SoA style app while still maintaining a continuity of service.
+
+Our typical usages of AWS include:
+
+1. EC2 instances for hosting applications
+1. RDS instances for hosting databases
+1. S3 for hosting uploaded files
+1. OpsWorks for provisioning each if the size or complexity is large
