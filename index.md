@@ -87,6 +87,18 @@ Honestly, writing custom CRUD operations for basic forms is a trivial and relati
 Our usual choice for Authentication needs is [Devise](https://github.com/plataformatec/devise).  It is the de-facto standard for the Rails community and carries with it strong community support and high quality documentation.  It is also very easy to customize and skin to our exact needs as defined on a project by project basis.
 
 
+Our typical setup procedure for devise looks something like:
+
+```sh
+$ rails generate devise:install
+$ rails generate devise User
+$ rails generate devise:views
+```
+
+For the most part, any deviations from Devise's standard functionality is a result of custom needs on a project.  Devise has excellent documentation on their GitHub page and can easily be extended to support most of our needs.
+
+If you find yourself repeatedly doing something, please don't hesitate to open an issue so that we can document it here.
+
 ## Background Jobs
 
 [Delayed::Job](https://github.com/collectiveidea/delayed_job) is our usual choice for a backing engine to support ActiveJob.  It provides solid community support and a strong sharing of knowledge amongst our developers.
