@@ -109,7 +109,7 @@ If you find one that you *really* like and feel is way superior, please open an 
 
 [Carrierwave](https://github.com/carrierwaveuploader/carrierwave) is another choice we often use.  It provides all the same support for storage (thanks to Fog).  One main difference, between it and Paperclip, is its ability to [cache a file after upload so it does not require uploading again after an invalid form submission](https://github.com/carrierwaveuploader/carrierwave#making-uploads-work-across-form-redisplays).  Our primary recommendation is to use CarrierWave.
 
-[Paperclip](https://github.com/thoughtbot/paperclip) is a good choice for handling file uploads and should be your usual choice.  It provides excellent support for local storage as well as storage to S3 via Fog.  Its usage and support is well understood by most Rails developers and carries a high amount of hive-knowledge.
+[Paperclip](https://github.com/thoughtbot/paperclip) is a good choice for handling file uploads and storage.  It provides excellent support for local storage as well as storage to S3 via Fog.  Its usage and support is well understood by most Rails developers and carries a high amount of hive-knowledge.
 
 ## Pagination
 
