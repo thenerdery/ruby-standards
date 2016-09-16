@@ -65,8 +65,6 @@ This separation gives us clear choices as to the locations of most items and hel
 
 ## Hosting
 
-**This section may shortly be revised thanks to some research work by Peter**
-
 There are 2 primary means for hosting source control on Nerdery Rails projects:
 
 1. GitHub
