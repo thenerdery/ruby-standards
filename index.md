@@ -63,7 +63,9 @@ MVC is not a silver bullet for every single problem.  It *is* a damned good way 
 
 > All non-mvc code goes into `lib/` - **eg: lib/services, lib/polices, lib/whatever**
 
-The predominant way that you will step out of the MVC pattern is through the usage and implementation of **service classes**.  These classes are typically developed to split out particular *concerns* of a given domain object.  You may find this at odds with Rails Concerns and rightfully so.  Rails Concerns are a hotly debated topic in the Rails community, and as a whole we simply eskew towards using the more agnostic Service Class approach.
+The predominant way that you will step out of the MVC pattern is through the usage and implementation of **service classes**.  These classes are typically developed to split out particular *concerns* of a given domain object.  You may find this at odds with Rails Concerns and rightfully so.  Rails Concerns are a hotly debated topic in the Rails community, and as a whole we simply eschew towards using the more agnostic Service Class approach.
+
+You can find an in depth discussion about implementing service classes over on [Stitch Fix's blog](http://multithreaded.stitchfix.com/blog/2015/06/02/anatomy-of-service-objects-in-rails/).
 
 # Rails Clean Code Basics
 
