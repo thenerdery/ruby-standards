@@ -26,9 +26,19 @@ body {
     "Segoe UI Symbol";
 }
 
+blockquote {
+  background-color: #efefef;
+  color: #636363;
+  padding: 15px;
+}
+
 img {
   display: block;
   width: 100%;
+}
+
+ol {
+  margin-bottom: 15px;
 }
 
 //================================================================
