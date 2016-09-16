@@ -80,6 +80,8 @@ Administrate is a useful gem for non-customizable, easy and quick administrative
 
 Honestly, writing custom CRUD operations for basic forms is a trivial and relatively fast task.  It is boring and thankless work, but in the end it provides a solid foundation upon which we can make the customizations that most of our clients are looking for in a Rails based project.
 
+*Please note*, ActiveAdmin purposefully does not show up in this list because they have been slow to keep up with major versions of Rails.  Even as of this writing, Rails 5 support is present only in master and is listed as "preliminary".
+
 ## Authentication
 
 Our usual choice for Authentication needs is [Devise](https://github.com/plataformatec/devise).  It is the de-facto standard for the Rails community and carries with it strong community support and high quality documentation.  It is also very easy to customize and skin to our exact needs as defined on a project by project basis.
