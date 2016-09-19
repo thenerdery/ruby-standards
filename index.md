@@ -124,6 +124,10 @@ You can find an in depth discussion about implementing service classes over on [
 
 # Rails Clean Code Basics
 
+1. Keep your controllers small - they control things, they don't **do** things
+1. Keep your models small - logic that can be cleanly collected into a specific *business concern* should be split out into a *service class*.
+1. Run `rubycritic` and `rubocop` to ensure that your code is up to standards
+
 # Source Control Practices
 
 ## Hosting
