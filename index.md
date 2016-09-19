@@ -41,8 +41,6 @@ We are extremely fortunate in our community to have [Rubocop](https://github.com
   end
 ```
 
-**Follow those standards and you will be set.**
-
 # Installing Ruby on Rails
 
 The following "Installing Ruby on Rails" sections are lifted directly from Jordan's [Rails Best Practices](http://www.phantomdata.com/2016/07/21/rails-best-practices.html) guide.
