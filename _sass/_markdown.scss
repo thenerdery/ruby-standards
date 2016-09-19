@@ -36,14 +36,35 @@
   a:visited { color: #a38b9a; }
   a:hover { color: #007b89; }
 
+  ul,
+  ol {
+    margin-left: 20px;
+    margin-bottom: 1rem;
+  }
+
   ol ol,
   ul ol {
     padding-left: 40px;
     list-style-type: lower-roman;
   }
 
+  #markdown-toc ol {
+    margin-bottom: 0;
+  }
+
   ul ul ol,
   ul ol ol,
   ol ul ol,
   ol ol ol { list-style-type: lower-alpha; }
+
+  code {
+      font-size: 0.9rem;
+      font-family: monospace;
+      background-color: #ededed;
+      padding: 2px;
+  }
+
+  pre {
+      margin-bottom: 1rem;
+  }
 }
