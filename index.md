@@ -223,3 +223,21 @@ Our typical usages of AWS include:
 1. RDS instances for hosting databases
 1. S3 for hosting uploaded files
 1. OpsWorks for provisioning each if the size or complexity is large
+
+# Documentation
+
+Traditionally documentation has been a second-class citizen in most Rails project. This holds true just as much outside The Nerdery as internally. As innovators and leaders in our industry we should hold ourselves to a higher standard and therefore provide ample documentation on the products we produce.
+
+## Start with the README
+Your application’s README is still its gateway, the first thing new developers will likely read when they access its source code. If your app’s README consists of the default given to every new Rails app, it’s time to change it.
+
+Your README should include:
+
+* A brief description of what the application does.
+* How to install dependencies, especially those that are more complex than a simple `bundle install`. For example, if I need to to install Redis or ImageMagick to work on the app, or configure environment variables to talk to external services, let me know up front.
+* How to run the application’s test suite, to verify that setup was successful. Again, note special external dependencies, like PhantomJS.
+* How to generate the docs, to get to a more detailed description of the application’s code.
+
+## Remove generated documentation from source control
+
+The HTML version of your Rails docs will need to be regenerated regularly, in order to keep up with the code they explain. Ignoring the doc/app directory makes sure that stale documentation doesn’t stick around from commit to commit, and just makes commits cleaner in general. This is why it’s important to mention how to generate the docs in your README as they won’t be easily accessible, otherwise.
