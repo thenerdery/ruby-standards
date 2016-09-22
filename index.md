@@ -226,7 +226,7 @@ Our typical usages of AWS include:
 
 # Documentation
 
-Traditionally documentation has been a second-class citizen in most Rails project. This holds true just as much outside The Nerdery as internally. As innovators and leaders in our industry we should hold ourselves to a higher standard and therefore provide ample documentation on the products we produce.
+Traditionally documentation has been a second-class citizen in most Rails project. This holds true just as much outside The Nerdery as internally. As innovators and leaders in our industry we should hold ourselves to a higher standard and therefore provide ample documentation on the products we produce. A great article on improving Rails based documentation published by Aaron Sumner can be found [here](http://everydayrails.com/2016/04/18/rails-documentation-practices.html) and many of the practices described below are pulled from his philosophy.
 
 ## Start with the README
 Your application’s README is still its gateway, the first thing new developers will likely read when they access its source code. If your app’s README consists of the default given to every new Rails app, it’s time to change it.
@@ -241,3 +241,8 @@ Your README should include:
 ## Remove generated documentation from source control
 
 The HTML version of your Rails docs will need to be regenerated regularly, in order to keep up with the code they explain. Ignoring the doc/app directory makes sure that stale documentation doesn’t stick around from commit to commit, and just makes commits cleaner in general. This is why it’s important to mention how to generate the docs in your README as they won’t be easily accessible, otherwise.
+
+## Write clear documentation
+
+* __Don't assume knowledge of the business__: If you've been working in the application for awhile, the names you've given your classes and methods may seem obvious, but to a newcomer they can be a large hurdle to overcome. Help explain ___why___ things are called what they are.
+* __Do assume knowledge of Rails__: The rule of thumb is to document ___why___, now ___how___. Document under the assumption that the reader can read Ruby code, or at least knows how to search Google or STack Overflow to learn more about specific methods.
