@@ -153,8 +153,6 @@ An example of such a section from a recent project (2016/09/16) is as such:
 >
 > For **emergency fixes**, branch off of `master` to make your fix.  Once tested and complete, merge this branch back into master and then develop.
 
-# Testing
-
 # Deployment
 
 There are really 2 primary ways to handle deployment on Rails projects at The Nerdery:
