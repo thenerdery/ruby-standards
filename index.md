@@ -13,17 +13,6 @@ Today at The Nerdery, the Ruby discipline is effectively the Ruby on Rails disci
 
 So you want to contribute to this document?  Awesome!  We openly accept collaboration and want your halp!  Please contact @sumpygump for commit access to our [repo on GitHub](https://github.com/thenerdery/ruby-standards)!  You can also open issues over on GitHub and even fork the project to make your own changes before submitting them back to main.
 
-# Further Resources
-
-Remember, this is a standards guide - **not a tutorial**.  If you are interested in learning Ruby then that's fantastic!  Below you'll find a curated list of some of the best resources for getting started:
-
-1. [Nerdery Getting Started Guide]() - for getting started.
-1. [Ruby Warrior]() - for learning Ruby.
-1. [Rails Best Practices]() - for learning a *right* way.
-1. [Blog Tutorial #1]() - Something about this!
-1. [Another Blog Tutorial]() - More things.
-1. [RailsGuides]() - The ultimate API document for figuring Rails out.
-
 <h1>Table of Contents</h1>
 
 1. TOC
