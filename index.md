@@ -11,7 +11,7 @@ Today at The Nerdery, the Ruby discipline is effectively the Ruby on Rails disci
 
 # Contributing
 
-So you want to contribute to this document?  Awesome!  We openly accept collaboration and want your halp!  Please contact @sumpygump for commit access to our [repo on GitHub](https://github.com/thenerdery/ruby-standards)!  You can also open issues over on GitHub and even fork the project to make your own changes before submitting them back to main.
+So you want to contribute to this document?  Awesome!  We openly accept collaboration and want your help!  Please contact @sumpygump for commit access to our [repo on GitHub](https://github.com/thenerdery/ruby-standards)!  You can also open issues over on GitHub and even fork the project to make your own changes before submitting them back to main.
 
 <h1>Table of Contents</h1>
 
@@ -155,7 +155,7 @@ Capistrano is good for systems which use manually provisioned machines or for wh
 
 The other option is using your provisioning scripts to handle your deployments.  This methodology typically involves a git repository that is cloned during your provisioning step and heavily depends upon you treating your new systems as cattle and not pets.  It provides no good long-term maintenance plan for a specific instance, instead assuming that you will kill that instance and spawn a new one when you are doing a deployment.
 
-There are extensive debates and subjective opinions on server provisioning in general.  We have yet to reach a generally accepted consensus, neither at The Nerdery nor the community at large.  Please take the time to have these discussions with knowledgable individuals to determine best fit for your project.
+There are extensive debates and subjective opinions on server provisioning in general.  We have yet to reach a generally accepted consensus, neither at The Nerdery nor the community at large.  Please take the time to have these discussions with knowledgeable individuals to determine best fit for your project.
 
 # 3rd Party Libraries
 
@@ -240,9 +240,36 @@ Your README should include:
 
 ## Remove generated documentation from source control
 
-The HTML version of your Rails docs will need to be regenerated regularly, in order to keep up with the code they explain. Ignoring the doc/app directory makes sure that stale documentation doesn’t stick around from commit to commit, and just makes commits cleaner in general. This is why it’s important to mention how to generate the docs in your README as they won’t be easily accessible, otherwise.
+The HTML version of your Rails docs will need to be regenerated regularly, in order to keep up with the code they explain. Ignoring the doc/app directory makes sure that stale documentation doesn't stick around from commit to commit, and just makes commits cleaner in general. This is why it’s important to mention how to generate the docs in your README as they won’t be easily accessible, otherwise.
 
 ## Write clear documentation
 
 * __Don't assume knowledge of the business__: If you've been working in the application for awhile, the names you've given your classes and methods may seem obvious, but to a newcomer they can be a large hurdle to overcome. Help explain ___why___ things are called what they are.
-* __Do assume knowledge of Rails__: The rule of thumb is to document ___why___, now ___how___. Document under the assumption that the reader can read Ruby code, or at least knows how to search Google or STack Overflow to learn more about specific methods.
+* __Do assume knowledge of Rails__: The rule of thumb is to document ___why___, now ___how___. Document under the assumption that the reader can read Ruby code, or at least knows how to search Google or Stack Overflow to learn more about specific methods.
+
+## YARD + RDOC
+
+The Nerdery recommends utilizing the [YARD gem](http://yardoc.org/) in conjunction with the standard [RDOC documentation system](http://rdoc.sourceforge.net/doc/) to provide clear and consistent documentation on our projects. YARD fills in some of the gaps that RDOC does not address by allowing us to organize our codes meta and behavioural data through the use of [tags](http://www.rubydoc.info/gems/yard/file/docs/Tags.md). Not only does this create consistency between our projects, but it also more closely represents the way documentation blocks are handled via the other disciplines at The Nerdery, making point of entry into the language easier for an outside developer to understand.
+
+### The `.yardopts` file
+
+YARD accepts [many different options](http://www.rubydoc.info/gems/yard/YARD/CLI/Yardoc), and for ease of development it is recommended that you use a `.yardopts` file to outline these options. YARD will automatically parse this file every time `yard` is run and conform to it's requests. A recommended starter file is outlined below
+
+    --private
+    --markup=markdown
+    app/**/*.rb -
+    lib/**/*.rb -
+    
+This starter file tells YARD to document all private methods, interpret and render markup in the docblocks, and generate documenation for all *.rb files located in the app and lib folders. 
+
+### Markdown format
+
+YARD supports [multiple formats](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md#Which_Markup_Format_) for it's markup rendering. Due to the industry wide acceptance and use of standard Markdown for most circumstances The Nerdery recommends utilizing `markdown` as the format of choice on our Ruby projects.
+
+### Do's & Dont's
+
+[YARD](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md) and [RDOC](http://rdoc.sourceforge.net/doc/) are very extensive. We encourage you to read over the documentation and explore the vast amount of options available to you, however documenting too much, or using unwise practices can make your documentation just as bad as not having any at all. In this section we'll cover The Nerdery recommended practices while using this documentation engine combination:
+
+#### __DO__ 
+* Provide a documentation block at the top of every class file with a description of the classes function (___why___ not ___how___) within the application, your [author name](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#author), and a [version number](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#since) of when the class was first added to the project. 
+* Provide a documentation block at the top of every method with a description of the methods function (___why___ not ___how___), all [paramaters](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#param) of the method
