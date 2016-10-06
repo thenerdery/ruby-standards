@@ -271,6 +271,17 @@ YARD supports [multiple formats](http://www.rubydoc.info/gems/yard/file/docs/Get
 [YARD](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md) and [RDOC](http://rdoc.sourceforge.net/doc/) are very extensive. We encourage you to read over the documentation and explore the vast amount of options available to you, however documenting too much, or using unwise practices can make your documentation just as bad as not having any at all. In this section we'll cover The Nerdery recommended practices while using this documentation engine combination:
 
 #### __DO__ 
-* Provide a documentation block at the top of every class file with a description of the classes function (___why___ not ___how___) within the application, your [author name](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#author), and a [version number](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#since) of when the class was first added to the project. 
-* Provide a documentation block at the top of every method with a description of the methods function (___why___ not ___how___), all [paramaters](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#param) of the method
+* Provide a documentation block at the top of every class file. This should contain:
+    * A description of the classes function (___why___ not ___how___) within the application.
+    * Your [author name](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#author).
+    * A [version number](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#since) of when the class was first added to the project. 
+* Provide a documentation block at the top of every method. This should contain:
+    * A description of the methods function (___why___ not ___how___).
+    * All [paramaters](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#param) of the method.
+    * All [options](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#option) if an options Hash is being used as a param.
+    * A [return](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#return) value. If no return value is produced by the method `@return [void]` would be the expected return.
+    
+#### __DON'T__
+
+    
 
