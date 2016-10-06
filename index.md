@@ -276,10 +276,10 @@ YARD supports [multiple formats](http://www.rubydoc.info/gems/yard/file/docs/Get
     * Your [author name](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#author).
     * A [version number](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#since) of when the class was first added to the project. 
 * Provide a documentation block at the top of every method. This should contain:
-    * A description of the methods function (___why___ not ___how___).
+    * A description of the methods function (___why___ not ___how___) within the class.
     * All [paramaters](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#param) of the method.
     * All [options](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#option) if an options Hash is being used as a param.
-    * A [return](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#return) value. If no return value is produced by the method `@return [void]` would be the expected return.
+    * A [return](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#return) value. If no return value is produced by the method `void` would be the expected return.
     
 #### __DON'T__
 
