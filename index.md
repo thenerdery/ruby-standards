@@ -273,3 +273,4 @@ YARD supports [multiple formats](http://www.rubydoc.info/gems/yard/file/docs/Get
 #### __DO__ 
 * Provide a documentation block at the top of every class file with a description of the classes function (___why___ not ___how___) within the application, your [author name](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#author), and a [version number](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#since) of when the class was first added to the project. 
 * Provide a documentation block at the top of every method with a description of the methods function (___why___ not ___how___), all [paramaters](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#param) of the method
+
