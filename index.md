@@ -290,13 +290,15 @@ YARD supports [multiple formats](http://www.rubydoc.info/gems/yard/file/docs/Get
     * A description of the classes function (___why___ not ___how___) within the application.
     * Your [author name](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#author).
     * A [version number](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#since) of when the class was first added to the project. 
-* Provide a documentation block at the top of every method. This should contain:
+* Provide a documentation block at the top of every method with the exception of standard CRUD controller operations (`index`|`new`|`create`|`show`|`edit`|`update`|`destroy`). This should contain:
     * A description of the methods function (___why___ not ___how___) within the class.
     * All [paramaters](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#param) of the method.
     * All [options](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#option) if an options Hash is being used as a param.
     * A [return](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#return) value. If no return value is produced by the method `void` would be the expected return.
+* Document all [model attributes](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md#Documenting_Attributes). Obviously this means writing each to their own line and not strining them together via commas. In the event you need separate documenation for the attributes getter and setter then follow [these steps]( http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md#Documentation_for_a_Separate_Attribute_Writer).
+* Use [Duck-Type specifiers](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#Duck-Types) when appropriately.
     
 #### __DON'T__
-
-    
-
+* Use YARD based [reference tags](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md#Reference_Tags). Although this methodology reduces DRY documentation it also enforces coupling.
+* Overload your documentation. Having overly cumbersome documentation is just as bad as having no documentation at all. Keep your docblocks small, concise, and to the point. Often throughout the RubyDocs and YARD documentation pages you will be presented with large docblocks filled with markdown and html structures, unless this type of documentation adds significant understandability to the class or method we ask that you refrain from emulating this. "Short, Sweet, To The Point"
+* Don't create [custom tags](http://www.rubydoc.info/gems/yard/file/docs/Tags.md#Adding_Custom_Tags) unless absolutely vital to the understandability of the documentation. If you are presented with a case where you do need to make them ensure that you are always namespacing them.
