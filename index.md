@@ -13,6 +13,17 @@ Today at The Nerdery, the Ruby discipline is effectively the Ruby on Rails disci
 
 So you want to contribute to this document?  Awesome!  We openly accept collaboration and want your help!  Please contact @sumpygump for commit access to our [repo on GitHub](https://github.com/thenerdery/ruby-standards)!  You can also open issues over on GitHub and even fork the project to make your own changes before submitting them back to main.
 
+# Further Resources
+
+Remember, this is a standards guide - **not a tutorial**.  If you are interested in learning Ruby then that's fantastic!  Below you'll find a curated list of some of the best resources for getting started:
+
+1. [Nerdery Getting Started Guide](https://ruby.nerderylabs.com/training/training-module-0/) - for getting started.
+1. [Code School](https://www.codeschool.com/learn/ruby) - fun, interactive video lessons.
+1. [Ruby Warrior](https://www.bloc.io/ruby-warrior/) - a game for learning Ruby.
+1. [Rails Best Practices](http://rails-bestpractices.com/) - for learning a *right* way.
+1. [Rails Guides](http://guides.rubyonrails.org/) - the ultimate API document for figuring Rails out.
+1. [Ruby Koans](http://rubykoans.com/) - learn the quirks of Ruby by fixing unit tests.
+
 <h1>Table of Contents</h1>
 
 1. TOC
@@ -142,6 +153,9 @@ An example of such a section from a recent project (2016/09/16) is as such:
 >
 > For **emergency fixes**, branch off of `master` to make your fix.  Once tested and complete, merge this branch back into master and then develop.
 
+If a branching strategy has not been specified for a project, consider the [git-flow](http://danielkummer.github.io/git-flow-cheatsheet/) approach as a good starting point.
+
+
 # Deployment
 
 There are really 2 primary ways to handle deployment on Rails projects at The Nerdery:
@@ -222,6 +236,7 @@ Our typical usages of AWS include:
 1. EC2 instances for hosting applications
 1. RDS instances for hosting databases
 1. S3 for hosting uploaded files
+1. ElastiCache instances for hosting in-memory data stores
 1. OpsWorks for provisioning each if the size or complexity is large
 
 # Documentation
