@@ -241,7 +241,9 @@ Our typical usages of AWS include:
 
 # Documentation
 
-Traditionally documentation has been a second-class citizen in most Rails project. This holds true just as much outside The Nerdery as internally. As innovators and leaders in our industry we should hold ourselves to a higher standard and therefore provide ample documentation on the products we produce. A great article on improving Rails based documentation published by Aaron Sumner can be found [here](http://everydayrails.com/2016/04/18/rails-documentation-practices.html) and many of the practices described below are pulled from his philosophy.
+Good documentation makes a long-lived project easier to understand and maintain. It can help introduce new developers to an unfamiliar codebase, or serve as a reference point for the team coming back to code 6 months later. Documentation may also cover important architectural decisions, complex business logic, or quirks and workarounds of the tech we're working with. Just as we put effort into making tests that last to ensure our application is stable and robust, we also focus on providing meaningful documentation.
+
+A great article on improving Rails-based documentation published by Aaron Sumner can be found here. Many of the practices described below are pulled from his philosophy.
 
 ## Start with the README
 Your application’s README is still its gateway, the first thing new developers will likely read when they access its source code. If your app’s README consists of the default given to every new Rails app, it’s time to change it.
@@ -264,7 +266,7 @@ The HTML version of your Rails docs will need to be regenerated regularly, in or
 
 ## YARD + RDOC
 
-The Nerdery recommends utilizing the [YARD gem](http://yardoc.org/) in conjunction with the standard [RDOC documentation system](http://rdoc.sourceforge.net/doc/) to provide clear and consistent documentation on our projects. YARD fills in some of the gaps that RDOC does not address by allowing us to organize our codes meta and behavioural data through the use of [tags](http://www.rubydoc.info/gems/yard/file/docs/Tags.md). Not only does this create consistency between our projects, but it also more closely represents the way documentation blocks are handled via the other disciplines at The Nerdery, making point of entry into the language easier for an outside developer to understand.
+We recommend utilizing the [YARD gem](http://yardoc.org/) in conjunction with the standard [RDOC documentation system](http://rdoc.sourceforge.net/doc/) to provide clear and consistent documentation on our projects. YARD fills in some of the gaps that RDOC does not address by allowing us to organize our codes meta and behavioural data through the use of [tags](http://www.rubydoc.info/gems/yard/file/docs/Tags.md). Not only does this create consistency between our projects, but it also more closely represents the way documentation blocks are handled via the other disciplines at The Nerdery, making point of entry into the language easier for an outside developer to understand.
 
 ### The `.yardopts` file
 
@@ -279,11 +281,11 @@ This starter file tells YARD to document all private methods, interpret and rend
 
 ### Markdown format
 
-YARD supports [multiple formats](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md#Which_Markup_Format_) for it's markup rendering. Due to the industry wide acceptance and use of standard Markdown for most circumstances The Nerdery recommends utilizing `markdown` as the format of choice on our Ruby projects.
+YARD supports [multiple formats](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md#Which_Markup_Format_) for it's markup rendering. Due to the industry wide acceptance and use of standard Markdown for most circumstances we recommends utilizing `markdown` as the format of choice on our Ruby projects.
 
 ### Do's & Dont's
 
-[YARD](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md) and [RDOC](http://rdoc.sourceforge.net/doc/) are very extensive. We encourage you to read over the documentation and explore the vast amount of options available to you, however documenting too much, or using unwise practices can make your documentation just as bad as not having any at all. In this section we'll cover The Nerdery recommended practices while using this documentation engine combination:
+[YARD](http://www.rubydoc.info/gems/yard/file/docs/GettingStarted.md) and [RDOC](http://rdoc.sourceforge.net/doc/) are very extensive. We encourage you to read over the documentation and explore the vast amount of options available to you, however documenting too much, or using unwise practices can make your documentation just as bad as not having any at all. In this section we'll cover our recommended practices while using this documentation engine combination:
 
 #### __DO__ 
 * Provide a documentation block at the top of every class file. This should contain:
