@@ -1,11 +1,30 @@
 # Ruby Language Standards
 
-The Ruby community as a whole is fairly homogeneous and thoroughly focused on maintaining that community.  As a result, we have an excellent [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) available to us that puts forth most of the usual "how many tabs, how to name methods" sorts of questions.  At The Nerdery, we use this.
+## Formatting
 
-We are extremely fortunate in our community to have [Rubocop](https://github.com/bbatsov/rubocop) available to use - which will automatically check for standards violations against the community Ruby Style Guide.  Please make sure that you use **and enforce** this on any of your Ruby projects.
+For general Ruby formatting, refer to the excellent community-driven [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
+
+## Code Quality
+
+We use [Rubycritic](https://github.com/whitesmith/rubycritic) to lint our projects and check for general code smells. This gem is a wrapper for several other code quality gems including Reek and Rubocop.
+
+Other code quality gems we like to use include:
+* [Brakeman](https://github.com/presidentbeef/brakeman)
+* [Bullet](https://github.com/flyerhzm/bullet)
+* [SimpleCov](https://github.com/colszowka/simplecov)
 
 ```ruby
-  group :development, :test do
-    gem 'rubocop'
-  end
+group :development do
+  gem 'brakeman', require: false
+  gem 'bullet', require: false
+  gem 'rubycritic', require: false
+end
+
+group :test do
+  gem 'simplecov', require: false
+end
 ```
+
+<!-- TODO: When to ignore Rubycritic / how to use it sanely -->
+
+<!-- TODO: Typical Rubycritic configuration? -->
