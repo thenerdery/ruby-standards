@@ -1,34 +1,3 @@
----
-layout: page
-author: The Nerdery Ruby Standards Task Force
----
-
-# Introduction
-
-Our goal in the creation of this document is to not only improve consistency, but to also allow newer developers joining our discipline to have an easy to use reference point.  Consistency is a key element of software quality and without it all of our efforts eventually turn to spaghetti.
-
-Today at The Nerdery, the Ruby discipline is effectively the Ruby on Rails discipline.  We *do not* do much pure Ruby work and we *do not* do Sinatra work.  Thus, the focus of this document is not actually *Ruby* standards, but instead **Ruby on Rails** standards.
-
-# Contributing
-
-So you want to contribute to this document?  Awesome!  We openly accept collaboration and want your help!  Please contact @sumpygump for commit access to our [repo on GitHub](https://github.com/thenerdery/ruby-standards)!  You can also open issues over on GitHub and even fork the project to make your own changes before submitting them back to main.
-
-# Further Resources
-
-Remember, this is a standards guide - **not a tutorial**.  If you are interested in learning Ruby then that's fantastic!  Below you'll find a curated list of some of the best resources for getting started:
-
-1. [Nerdery Getting Started Guide](https://ruby.nerderylabs.com/training/training-module-0/) - for getting started.
-1. [Code School](https://www.codeschool.com/learn/ruby) - fun, interactive video lessons.
-1. [Ruby Warrior](https://www.bloc.io/ruby-warrior/) - a game for learning Ruby.
-1. [Rails Best Practices](http://rails-bestpractices.com/) - for learning a *right* way.
-1. [Rails Guides](http://guides.rubyonrails.org/) - the ultimate API document for figuring Rails out.
-1. [Ruby Koans](http://rubykoans.com/) - learn the quirks of Ruby by fixing unit tests.
-
-<h1>Table of Contents</h1>
-
-1. TOC
-{:toc}
-
 # Ruby Language Standards
 
 The Ruby community as a whole is fairly homogeneous and thoroughly focused on maintaining that community.  As a result, we have an excellent [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide) available to us that puts forth most of the usual "how many tabs, how to name methods" sorts of questions.  At The Nerdery, we use this.

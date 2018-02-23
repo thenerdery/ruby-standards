@@ -2,6 +2,7 @@
 
 ## Table of Contents
   1. [Overview](#overview)
+  1. [Learning Resources](/standards/learning-resources.md#resources)
   1. [Changelog](/CHANGELOG.md)
 
 ## <a name="overview"></a>Overview
