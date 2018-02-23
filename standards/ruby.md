@@ -6,7 +6,7 @@ For general Ruby formatting, refer to the excellent community-driven [Ruby Style
 
 # <a href="#formatting"></a>Ruby Tooling
 
-## Code Quality
+## <a href="#quality"></a>Code Quality
 
 Use [Rubycritic](https://github.com/whitesmith/rubycritic) to lint projects and check for general code smells. This gem is a wrapper for several other code quality gems including Reek and Rubocop.
 
