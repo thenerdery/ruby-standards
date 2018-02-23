@@ -1,6 +1,6 @@
 # Ruby on Rails Standards
 
-# An MVC Primer
+## An MVC Primer
 
 Ruby on Rails is one of many frameworks that follows the MVC design pattern.  This pattern dictates a distinct separation of concerns between the 3 major components: Model, View and Controller.  Each component represents a layer which a request works its way through as it is serviced.
 
@@ -12,7 +12,7 @@ Once a Controller has gathered enough information from the Model layer - this in
 
 This separation gives us clear choices as to the locations of most items and helps to prevent spaghetti code by having different components talking which have no business knowing about each-other.
 
-## Stepping Outside of MVC
+### Stepping Outside of MVC
 
 MVC is not a silver bullet for every single problem.  It *is* a damned good way to solve common web application architectures but it is often necessary to step outside of these boundaries.  It is a subject of much debate and has no generally agreed upon solution within the Rails community.  Since there is no clear winner, we have simply selected a pattern for you to follow:
 
@@ -23,7 +23,7 @@ The predominant way that you will step out of the MVC pattern is through the usa
 
 You can find an in depth discussion about implementing service classes over on [Stitch Fix's blog](http://multithreaded.stitchfix.com/blog/2015/06/02/anatomy-of-service-objects-in-rails/).
 
-# Rails Clean Code Basics
+## Rails Clean Code Basics
 
 1. Keep your controllers small - they control things, they don't **do** things
 1. Keep your models small - logic that can be cleanly collected into a specific *business concern* should be split out into a *service class*.
