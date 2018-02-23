@@ -28,3 +28,19 @@ end
 <!-- TODO: When to ignore Rubycritic / how to use it sanely -->
 
 <!-- TODO: Typical Rubycritic configuration? -->
+
+## Debugging & Development Errors
+
+We use [Better Errors](https://github.com/charliesome/better_errors) for quick access to a console on development runtime errors, and [Byebug](https://github.com/deivid-rodriguez/byebug) for line-by-line debugging.
+
+```ruby
+group :development do
+  # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
+  gem 'better_errors'
+  gem 'binding_of_caller'
+end
+
+group :development, :test do
+  gem 'byebug'
+end
+```
