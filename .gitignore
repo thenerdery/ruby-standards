@@ -1,5 +1,14 @@
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Other
 _site
 .sass-cache
 .jekyll-metadata
 .idea/*
-.DS_Store
+*.log
