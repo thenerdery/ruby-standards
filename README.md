@@ -2,15 +2,16 @@
 
 ## Table of Contents
   1. [Overview](#overview)
-  2. [Ruby](/standards/ruby.md)
-  3. [Rails](/standards/rails.md)
-  4. [Source Control](/standards/source-control.md)
-  5. [3rd Party Gems](/standards/third-party.md)
-  6. [3rd Party Services](/standards/third-party.md)
-  7. [Deployment](/standards/deployment.md)
-  8. [Documentation](/standards/documentation.md)
-  9. [Learning Resources](/standards/learning-resources.md#resources)
-  10. [Changelog](/CHANGELOG.md)
+  1. [Ruby Best Practices](/standards/ruby.md#ruby)
+  1. [Rails Best Practices](/standards/rails.md#rails)
+  1. [Testing Best Practices](/standards/testing.md)
+  1. [Source Control](/standards/source-control.md)
+  1. [3rd Party Gems](/standards/third-party.md)
+  1. [3rd Party Services](/standards/third-party.md)
+  1. [Deployment](/standards/deployment.md)
+  1. [Documentation](/standards/documentation.md)
+  1. [Resources](/standards/learning-resources.md#resources)
+  1. [Changelog](/CHANGELOG.md)
 
 ## <a name="overview"></a>Overview
 

@@ -1,4 +1,4 @@
-## <a name="resources"></a>Learning Resources
+# <a name="resources"></a>Learning Resources
 
 If you are interested in learning Ruby then that's fantastic!  Below you'll find a curated list of some of the best resources for getting started:
 

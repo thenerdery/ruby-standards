@@ -1,14 +1,16 @@
-# Ruby Language Standards
+# <a href="#ruby"></a>Ruby Best Practices
 
 ## Formatting
 
 For general Ruby formatting, refer to the excellent community-driven [Ruby Style Guide](https://github.com/bbatsov/ruby-style-guide).
 
+# <a href="#formatting"></a>Ruby Tooling
+
 ## Code Quality
 
-We use [Rubycritic](https://github.com/whitesmith/rubycritic) to lint our projects and check for general code smells. This gem is a wrapper for several other code quality gems including Reek and Rubocop.
+Use [Rubycritic](https://github.com/whitesmith/rubycritic) to lint projects and check for general code smells. This gem is a wrapper for several other code quality gems including Reek and Rubocop.
 
-Other code quality gems we like to use include:
+Other useful code quality gems include:
 * [Brakeman](https://github.com/presidentbeef/brakeman)
 * [Bullet](https://github.com/flyerhzm/bullet)
 * [SimpleCov](https://github.com/colszowka/simplecov)
@@ -31,7 +33,7 @@ end
 
 ## Debugging & Development Errors
 
-We use [Better Errors](https://github.com/charliesome/better_errors) for quick access to a console on development runtime errors, and [Byebug](https://github.com/deivid-rodriguez/byebug) for line-by-line debugging.
+Use [Better Errors](https://github.com/charliesome/better_errors) for quick access to a console on development runtime errors, and [Byebug](https://github.com/deivid-rodriguez/byebug) for line-by-line debugging.
 
 ```ruby
 group :development do
