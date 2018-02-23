@@ -13,9 +13,11 @@ Our internally self-hosted Nerdery BitBucket service provides a bare-bones code 
 
 ## Branching Strategies
 
-We firmly believe that branching strategies should be appropriate for the particular project and team-type associated.  The most important thing, when it comes to branching strategies, is clear communication and consistent amongst a given project.  As such, including a **contributing** section within the `README.md` is best practice and strongly encouraged.
+Use [git flow](http://nvie.com/posts/a-successful-git-branching-model/), unless there's a good project-specific reason not to.
 
-An example of such a section from a recent project (2016/09/16) is as such:
+Projects should include a **contributing** section within `README.md` that specifies what strategy is being used, and the basic expectations of contributing to that project.
+
+An example from a recent project (2016/09/16):
 
 > **Contributing**
 >
@@ -24,5 +26,3 @@ An example of such a section from a recent project (2016/09/16) is as such:
 > Before making a PR, ensure that you have merged develop back into your branch and that all tests & rubocops are passing.  Your PR will not be merged in if these conditions are not met.
 >
 > For **emergency fixes**, branch off of `master` to make your fix.  Once tested and complete, merge this branch back into master and then develop.
-
-If a branching strategy has not been specified for a project, consider the [git-flow](http://danielkummer.github.io/git-flow-cheatsheet/) approach as a good starting point.
