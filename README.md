@@ -2,8 +2,15 @@
 
 ## Table of Contents
   1. [Overview](#overview)
-  1. [Learning Resources](/standards/learning-resources.md#resources)
-  1. [Changelog](/CHANGELOG.md)
+  2. [Ruby](/standards/ruby.md)
+  3. [Rails](/standards/rails.md)
+  4. [Source Control](/standards/source-control.md)
+  5. [3rd Party Gems](/standards/third-party.md)
+  6. [3rd Party Services](/standards/third-party.md)
+  7. [Deployment](/standards/deployment.md)
+  8. [Documentation](/standards/documentation.md)
+  9. [Learning Resources](/standards/learning-resources.md#resources)
+  10. [Changelog](/CHANGELOG.md)
 
 ## <a name="overview"></a>Overview
 
