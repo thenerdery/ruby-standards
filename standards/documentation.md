@@ -1,4 +1,4 @@
-# Documentation
+# <a name="documentation"></a>Documentation
 
 Good documentation makes a long-lived project easier to understand and maintain. It can help introduce new developers to an unfamiliar codebase, or serve as a reference point for the team coming back to code 6 months later. Documentation may also cover important architectural decisions, complex business logic, or quirks and workarounds of the tech we're working with. Just as we put effort into making tests that last to ensure our application is stable and robust, we also focus on providing meaningful documentation.
 

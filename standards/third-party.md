@@ -1,4 +1,4 @@
-# 3rd Party Libraries
+# <a name="gems"></a>3rd Party Gems
 
 ## Admin Interfaces
 
@@ -46,7 +46,7 @@ If you find one that you *really* like and feel is way superior, please open an 
 
 [Kaminari](https://github.com/amatsuda/kaminari) - just use it.
 
-# 3rd Party Services
+# <a name="services"></a>3rd Party Services
 
 Our standard package of 3rd party services includes the following:
 
