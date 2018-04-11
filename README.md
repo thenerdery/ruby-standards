@@ -1,52 +1,33 @@
----
-layout: page
-title: README
-author: The Nerdery Ruby Standards Task Force
----
+# The Nerdery Ruby on Rails Coding Standards
 
-# Introduction
+## Table of Contents
+  1. [Overview](#overview)
+  1. [Ruby Best Practices](/standards/ruby.md#ruby)
+  1. [Rails Best Practices](/standards/rails.md#rails)
+  1. [Testing Best Practices](/standards/testing.md#testing)
+  1. [Source Control](/standards/source-control.md#source-control)
+  1. [3rd Party Gems](/standards/third-party.md#gems)
+  1. [3rd Party Services](/standards/third-party.md#services)
+  1. [Deployment](/standards/deployment.md#deployment)
+  1. [Documentation](/standards/documentation.md#documentation)
+  1. [Learning Resources](/standards/learning-resources.md#resources)
+  1. [Changelog](/CHANGELOG.md)
 
-This small Jekyll-based site houses the Ruby Standards used by developers at The Nerdery.  If you're a Nerdery developer, you should totally know these standards by heart.  If not?  This is a great place to learn some (at least we think) awesome best practices.
+## <a name="overview"></a>Overview
 
-# Contributing
+Our goal in the creation of this document is to not only improve consistency, but to also allow newer developers joining our discipline to have an easy to use reference point. Consistency is a key element of software quality and without it all of our efforts eventually turn to spaghetti.
 
-There's two ways you can contribute to this repository:
+Today at The Nerdery, the Ruby discipline is effectively the Ruby on Rails discipline. We do not do much pure Ruby work and we do not do Sinatra work. Thus, the focus of this document is not actually Ruby standards, but instead Ruby on Rails standards.
 
-1. Get access from @sumpygump, create a branch and issue a [Pull Request](https://github.com/blog/1943-how-to-write-the-perfect-pull-request).
-1. Make a fork and then issue a [Pull Request](https://github.com/blog/1943-how-to-write-the-perfect-pull-request)
+### Expectations
 
-We can actually discuss your PR and decide if we want to pull it into our main standards or not, so **don't be shy**.
+* Understand and follow the standards outlined in this document.
+* Write code knowing that someone else might be maintaining it.
+* Select tools that benefit the project.
 
-# Project Structure
+### Goals
 
-```
-  |
-  |- index.md              - the main standards document
-  |- _sass                 - where the sass lives
-  |- _layouts/default.html - the main page wrapper
-  |- _layouts/page.html    - the main layout for the standards document
-```
-
-# Getting Started
-
-
-You will need Ruby installed and properly functioning for this Jekyll site to run locally.  If you don't already, you can certainly [consult this guide](http://somewhere.com/#installing-ruby) to get it installed properly.
-
-```sh
-bundle install
-bundle exec jekyll serve
-```
-
-After that, the site will be running @ http://localhost:4000 and sports live-reloading as you make changes.
-
-## Installation Troubleshooting
-
-If you run into an error on Mac OS X after running `bundle install` regarding
-an error for nokogiri. The following steps may allow you to get the
-dependencies installed properly, as per [this stackoverflow post](https://github.com/sparklemotion/nokogiri/issues/1483).
-
-```sh
-brew uninstall --force xz
-gem install nokogiri -v 1.6.8
-bundle config build.nokogiri --use-system-libraries
-```
+* Be consistent
+* Be awesome
+* Write good, maintainable code
+* Remember to test all the things :)
